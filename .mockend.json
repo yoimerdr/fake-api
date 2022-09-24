@@ -7,7 +7,7 @@
       "boolean": {}
     },
     "description": {
-      "loremSetences": {
+      "loremSentences": {
         "minLength": 100,
         "maxLength": 300
       }
