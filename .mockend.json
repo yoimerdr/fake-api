@@ -12,7 +12,7 @@
     "description": {
       "loremSentences": {
         "minLength": 100,
-        "maxLength": 300
+        "maxLength": 180
       }
     }
   }
