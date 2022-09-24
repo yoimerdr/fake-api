@@ -15,5 +15,27 @@
         "maxLength": 180
       }
     }
+  },
+  "User": {
+    "name": {
+      "string": [
+        "Juan Perez",
+        "Pedro Riojas",
+        "Carlos Velar",
+        "Rosa Vasquez",
+        "Juan Carlos",
+        "María Pardo",
+        "Rosa Melano"
+      ]
+    },
+    "age": {
+      "int": {
+        "min": 17,
+        "max": 35
+      }
+    },
+    "address": {
+      "regexp": "Av. [A-z]{5,10}"
+    }
   }
 }
