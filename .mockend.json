@@ -7,9 +7,9 @@
       "boolean": {}
     },
     "description": {
-      "loremWords": {
-        "minLength": 10,
-        "maxLength": 30
+      "loremSetences": {
+        "minLength": 100,
+        "maxLength": 300
       }
     }
   }
