@@ -1,7 +1,10 @@
 {
   "Post": {
     "title": {
-      "regexp": "[A-Z][a-z]{5,10}"
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
     },
     "published": {
       "boolean": {}
