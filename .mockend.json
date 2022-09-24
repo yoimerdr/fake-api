@@ -1,5 +1,5 @@
 {
-  "Tutorial": {
+  "Post": {
     "title": {
       "regexp": "[A-Z][a-z]{5,10}"
     },
