@@ -35,7 +35,14 @@
       }
     },
     "address": {
-      "regexp": "Av. [A-z]{5,10}"
+      "string": [
+        "Av. Las Lilas 187",
+        "Av. San Nicolasa 187",
+        "Av. San Nicolasa 230",
+        "Av. Nazareth 19",
+        "Av. Lizas 18",
+        "Av. San Nicolasa 245"
+      ]
     }
   }
 }
