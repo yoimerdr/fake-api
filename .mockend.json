@@ -1,48 +1,76 @@
 {
   "Post": {
+    "_": {
+      "items": 10,
+      "data": [
+        {
+          "title": "First title",
+          "body": "You can use your own data or have random values generated for you."
+        },
+        {
+          "title": "Second title",
+          "body": "The rest of the posts will have random values"
+        }
+      ]
+    },
+    "cover": {
+      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+    },
     "title": {
       "loremWords": {
         "minLength": 5,
         "maxLength": 20
       }
     },
-    "published": {
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
+    },
+    "category": {
+      "string": ["one", "two", "three"]
+    },
+    "isDraft": {
       "boolean": {}
     },
-    "description": {
-      "loremSentences": {
-        "minLength": 100,
-        "maxLength": 180
+    "views": {
+      "int": {
+        "min": 0,
+        "max": 1000
       }
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "comments": {
+      "hasMany": "Comment"
     }
   },
-  "User": {
-    "name": {
-      "string": [
-        "Juan Perez",
-        "Pedro Riojas",
-        "Carlos Velar",
-        "Rosa Vasquez",
-        "Juan Carlos",
-        "María Pardo",
-        "Rosa Melano"
-      ]
+  "Comment": {
+    "_": {
+      "items": 25
     },
-    "age": {
-      "int": {
-        "min": 17,
-        "max": 35
+    "email": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
       }
     },
-    "address": {
-      "string": [
-        "Av. Las Lilas 187",
-        "Av. San Nicolasa 187",
-        "Av. San Nicolasa 230",
-        "Av. Nazareth 19",
-        "Av. Lizas 18",
-        "Av. San Nicolasa 245"
-      ]
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "post": {
+      "belongsTo": "Post"
     }
   }
 }
